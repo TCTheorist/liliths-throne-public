@@ -2287,8 +2287,8 @@ public class Perk {
 			"perks/object_of_desire",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(
-					new Value<>(Attribute.DAMAGE_LUST, 1)),
-			Util.newArrayListOfValues("All partners in sex require [style.colourSex(+1 orgasm)] before being satisfied")) {
+					new Value<>(Attribute.DAMAGE_LUST, 10)),
+			Util.newArrayListOfValues("All partners in sex require [style.colourSex(+10 orgasm)] before being satisfied")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner, "[npc.NameIsFull] so astoundingly "+(owner.getFemininity()==Femininity.ANDROGYNOUS?"attractive":(owner.isFeminine()?"beautiful":"handsome"))
